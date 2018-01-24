@@ -436,7 +436,7 @@
                         n = scope.treeData.length;
                         for_each_branch(function (b, level) {
                             b.level = level;
-                            return b.expanded = b.level < expand_level;
+                            return b.expanded = true;
                         });
                         if (scope.treeControl != null) {
                             if (angular.isObject(scope.treeControl)) {
